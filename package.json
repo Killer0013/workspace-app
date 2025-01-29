@@ -1,0 +1,24 @@
+{
+  "name": "workspace-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.yourname.workspaceapp",
+    "publish": {
+      "provider": "github",
+      "repo": "your-repo-name",
+      "owner": "your-github-username"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.1.1",
+    "electron-builder": "^24.13.3",
+    "electron-updater": "^6.3.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
